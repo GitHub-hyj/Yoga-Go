@@ -1,0 +1,73 @@
+{
+	"comment": "",
+	"ignore": "test",
+	"package": [
+		{
+			"checksumSHA1": "ALdtpDASSq2Rq6YJX8GikqdPv9A=",
+			"path": "github.com/go-redis/redis",
+			"revision": "726ddef6f529e3fa57d0e19c334b9bcc69dbfb5a",
+			"revisionTime": "2019-10-21T10:21:23Z"
+		},
+		{
+			"path": "github.com/go-redis/redis/v7/internal",
+			"revision": "726ddef6f529e3fa57d0e19c334b9bcc69dbfb5a"
+		},
+		{
+			"path": "github.com/go-redis/redis/v7/internal/consistenthash",
+			"revision": "726ddef6f529e3fa57d0e19c334b9bcc69dbfb5a"
+		},
+		{
+			"path": "github.com/go-redis/redis/v7/internal/hashtag",
+			"revision": "726ddef6f529e3fa57d0e19c334b9bcc69dbfb5a"
+		},
+		{
+			"path": "github.com/go-redis/redis/v7/internal/pool",
+			"revision": "726ddef6f529e3fa57d0e19c334b9bcc69dbfb5a"
+		},
+		{
+			"path": "github.com/go-redis/redis/v7/internal/proto",
+			"revision": "726ddef6f529e3fa57d0e19c334b9bcc69dbfb5a"
+		},
+		{
+			"path": "github.com/go-redis/redis/v7/internal/util",
+			"revision": "726ddef6f529e3fa57d0e19c334b9bcc69dbfb5a"
+		},
+		{
+			"checksumSHA1": "1dbdS+ADojoCJS8oY8pVJs3say0=",
+			"path": "github.com/kardianos/osext",
+			"revision": "2bc1f35cddc0cc527b4bc3dce8578fc2a6c11384",
+			"revisionTime": "2019-02-22T17:33:26Z"
+		},
+		{
+			"checksumSHA1": "lffYsbTA5mfprZtjoLjVOKS8pwY=",
+			"path": "github.com/mattn/go-runewidth",
+			"revision": "f93a0d58d5fd95e53f82782d07bb0c79d23e1290",
+			"revisionTime": "2019-11-03T15:26:38Z"
+		},
+		{
+			"checksumSHA1": "Kk4UsO1/TAUdULlx9yWKpKdkmno=",
+			"path": "github.com/olekukonko/tablewriter",
+			"revision": "28c9868472de5b61d0a79f4c468103b80487f6c1",
+			"revisionTime": "2019-11-21T08:40:44Z"
+		},
+		{
+			"checksumSHA1": "yECMFHjNDJ5Tb/FKNE6IMupFjIM=",
+			"path": "github.com/peterh/liner",
+			"revision": "6f820f8f90ce9482ffbd40bb15f9ea9932f4942d",
+			"revisionTime": "2019-03-05T03:26:35Z"
+		},
+		{
+			"checksumSHA1": "Vdjr+0mTbBmbiKNC+T0n4IrnF6M=",
+			"path": "github.com/samuel/go-zookeeper/zk",
+			"revision": "2cc03de413da42869e2db7ce7965d3e978d917eb",
+			"revisionTime": "2019-09-23T20:27:52Z"
+		},
+		{
+			"checksumSHA1": "ef7fqXCjAavRO2aCl7FOKEqoqrg=",
+			"path": "github.com/urfave/cli",
+			"revision": "693af58b4d51b8fcc7f9d89576da170765980581",
+			"revisionTime": "2019-02-03T18:40:40Z"
+		}
+	],
+	"rootPath": "demo"
+}
