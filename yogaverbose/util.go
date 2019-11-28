@@ -1,7 +1,7 @@
 package yogaverbose
 
 import (
-	"Yoga-Go/yogautil/yogatime"
+	"github.com/GitHub-hyj/Yoga-Go/yogautil/yogatime"
 )
 
 func TimePrefix() string {

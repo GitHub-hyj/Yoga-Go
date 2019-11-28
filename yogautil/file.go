@@ -1,7 +1,7 @@
 package yogautil
 
 import (
-	"Yoga-Go/yogaverbose"
+	"github.com/GitHub-hyj/Yoga-Go/yogaverbose"
 	"github.com/kardianos/osext"
 	"os"
 	"path"

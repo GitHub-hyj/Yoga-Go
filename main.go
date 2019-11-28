@@ -1,13 +1,14 @@
 package main
 
 import (
-	"Yoga-Go/internal/yogaconfig"
-	"Yoga-Go/yogaliner"
-	"Yoga-Go/yogaliner/args"
-	"Yoga-Go/yogautil"
-	"Yoga-Go/yogautil/escaper"
-	"Yoga-Go/yogaverbose"
 	"fmt"
+	"github.com/GitHub-hyj/Yoga-Go/internal/yogacommand"
+	"github.com/GitHub-hyj/Yoga-Go/internal/yogaconfig"
+	"github.com/GitHub-hyj/Yoga-Go/yogaliner"
+	"github.com/GitHub-hyj/Yoga-Go/yogaliner/args"
+	"github.com/GitHub-hyj/Yoga-Go/yogautil"
+	"github.com/GitHub-hyj/Yoga-Go/yogautil/escaper"
+	"github.com/GitHub-hyj/Yoga-Go/yogaverbose"
 	"github.com/peterh/liner"
 	"github.com/urfave/cli"
 	"os"
@@ -207,6 +208,23 @@ func main() {
 			},
 		},
 		{
+			Name:  "login",
+			Usage: "登录账号",
+			Description: `
+	示例:
+		Yoga-Go login
+		Yoga-Go login -email=932761407@qq.com
+
+	常规登录:
+		按提示一步一步来即可.`,
+			Category: "Yoga盘账号",
+			Action: func(c *cli.Context) error {
+				yogacommand.RunLogin(c.String("email"), c.String("password"))
+
+				return nil
+			},
+		},
+		{
 			Name:    "quit",
 			Aliases: []string{"exit"},
 			Usage:   "退出程序",
@@ -217,7 +235,6 @@ func main() {
 			HideHelp: true,
 		},
 	}
-
 
 	sort.Sort(cli.FlagsByName(app.Flags))
 	sort.Sort(cli.CommandsByName(app.Commands))

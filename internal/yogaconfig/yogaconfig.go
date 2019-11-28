@@ -1,11 +1,11 @@
 package yogaconfig
 
 import (
-	"Yoga-Go/yogautil"
-	"Yoga-Go/yogaverbose"
-	"runtime"
+	"github.com/GitHub-hyj/Yoga-Go/yogautil"
+	"github.com/GitHub-hyj/Yoga-Go/yogaverbose"
 	"os"
 	"path/filepath"
+	"runtime"
 )
 
 const (
