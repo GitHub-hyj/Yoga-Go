@@ -9,7 +9,7 @@ import (
 	"strings"
 )
 
-func Post(urlStr string, params map[string]string)  (map[string]string, error) {
+func Post(urlStr string, params map[string]string)  (map[string]interface{}, error) {
 
 	client := &http.Client{}
 	query := url.Values{}
@@ -39,17 +39,17 @@ func Post(urlStr string, params map[string]string)  (map[string]string, error) {
 	if err != nil {
 		return nil, err
 	}
-
-	fmt.Println(string(body))
+	
 
 	var response map[string]interface{}
 	err = json.Unmarshal(body, &response)
 	if err != nil {
+		fmt.Println(err)
 		return nil, err
 	}
 
-	if data,ok := response["data"].(map[string]string); ok {
-		fmt.Println(data)
+
+	if data, ok := response["data"].(map[string]interface{}); ok {
 		return data,nil
 	}
 	return nil, nil
